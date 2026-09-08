@@ -2,129 +2,93 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Link pages using a tag</title>
+<title>HTML</title>
 <style>
     body {
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        text-align: center;
-        margin: 40px;
+        background-color: #a9c9dd;
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 40px 60px;
     }
+
     h1 {
-        font-size: 42px;
-        font-weight: bold;
-    }
-    p {
-        font-size: 20px;
-        font-style: italic;
-        line-height: 1.6;
-    }
-    a {
-        font-size: 22px;
-        font-style: italic;
-        text-decoration: underline;
-        color: blue;
-    }
-    table {
-        border-collapse: collapse;
-        margin: 20px auto;
-        width: 80%;
-    }
-    table, th, td {
-        border: 1px solid black;
-    }
-    th, td {
-        padding: 8px 12px;
-        text-align: left;
-        font-size: 16px;
-    }
-    th {
         text-align: center;
+        font-size: 40px;
+        letter-spacing: 4px;
+        margin-bottom: 0;
     }
-    .home {
-        margin-bottom: 60px;
+
+    .subtitle {
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        color: #ffffff;
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
-    .backlink {
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        text-decoration: underline;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        margin-top: 5px;
+    }
+
+    .banner-img {
         display: block;
-        margin: 30px 0;
+        margin: 20px auto;
+        width: 300px;
+        border-radius: 4px;
+    }
+
+    .know-more {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    button {
+        font-family: inherit;
+        padding: 4px 10px;
+        margin-left: 8px;
+        cursor: pointer;
     }
 </style>
 </head>
 <body>
 
-    <!-- HOME SECTION -->
-    <div class="home" id="home">
-        <p>Welcome to my page!!!<br>
-        To know more about me, tap on any links given below</p>
+    <h1>HTML</h1>
+    <p class="subtitle">ABOUT HyperText Markup Language</p>
 
-        <a href="#about">About</a><br>
-        <a href="#education">Education</a><br>
-        <a href="#contact">Contact</a>
-    </div>
+    <h2>Hypertext Markup Language</h2>
 
-    <!-- ABOUT SECTION -->
-    <div id="about">
-        <h1>ABOUT</h1>
-        <p>
-            Hi, I am VISAKH, a Keralite doing my MCA 1st sem in Mount Zion College of Engineering in Kadammanitta<br>
-            My native place is Alappuzha where my sweet home resides.<br>
-            My family consists of father, mother and Brother<br>
-            Father's name is Sadanandan, he is working<br>
-            Mother's name is Sulekha, she is housewife<br>
-            Brother's name is Visal, studying.....
-        </p>
-        <a class="backlink" href="#home">Back to home</a>
-    </div>
+    <h3>What is html?</h3>
+    <p>HTML stands for Hypertext Markup Language, and is a text-based language used to structure and display web pages</p>
 
-    <!-- EDUCATION SECTION -->
-    <div id="education">
-        <h1>EDUCATIONAL DETAILS</h1>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>Institution Name</th>
-                <th>Website</th>
-            </tr>
-            <tr>
-                <td>10th</td>
-                <td>S.V.H.S. Cheriyanad<br>Chengannur Pincode: 689121 Kerala, India</td>
-                <td><a href="https://www.svhss.com/">https://www.svhss.com/</a></td>
-            </tr>
-            <tr>
-                <td>12th</td>
-                <td>S.N. Trust H.S.S. Cheriyanad<br>Kerala 689121</td>
-                <td><a href="https://www.ghss.com/">https://www.ghss.com/</a></td>
-            </tr>
-            <tr>
-                <td>Degree</td>
-                <td>IHRD College of Applied Science, Perissery (Kerala University)<br>Chengannur Kerala, India</td>
-                <td><a href="https://casp.com/">https://casp.com/</a></td>
-            </tr>
-            <tr>
-                <td>PG</td>
-                <td>Mount Zion College of Engineering, Kadammanitta<br>Pathanamthitta, Kerala, India</td>
-                <td><a href="https://mzce.ac.in/">https://mzce.ac.in/</a></td>
-            </tr>
-        </table>
-        <a class="backlink" href="#home">Back to home page</a>
-    </div>
+    <ul>
+        <li>Head</li>
+        <li>Body</li>
+        <li>Title</li>
+    </ul>
 
-    <!-- CONTACT SECTION -->
-    <div id="contact">
-        <h1>CONTACT</h1>
-        <table>
-            <tr>
-                <th>Address</th>
-                <th>Phone Number</th>
-                <th>Email Id</th>
-            </tr>
-            <tr>
-                <td>Visakh Bhavanam<br>Neduvaramcode P.O<br>Chengannur, 689121</td>
-                <td>9656731715</td>
-                <td><a href="mailto:someone@example.com">Send Email</a></td>
-            </tr>
-        </table>
-        <a class="backlink" href="#home">Back to home page</a>
-    </div>
+    <img class="banner-img" src="images/banner.png" alt="HTML CSS banner">
+
+    <p>
+        HTML stands for <i>Hyper Text Markup Language</i>. HTML is the standard markup language for creating Web pages.<br>
+        HTML describes the structure of a Web page. HTML consists of a series of elements.<br>
+        HTML elements tell the browser how to display the content.
+    </p>
+
+    <p class="know-more">
+        Know more about HTML <button onclick="window.open('https://www.w3schools.com/html/','_blank')">click Here</button>
+    </p>
 
 </body>
 </html>
